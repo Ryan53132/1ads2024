@@ -26,22 +26,63 @@
               <li class="nav-item">
                 <a class="nav-link" href="Form.html">Form</a>
               </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="https://www.instagram.com/ryan_irra/">Instagram</a></li>
+                  <li><a class="dropdown-item" href="#">Facebook</a></li>
+                  <li><a class="dropdown-item" href="https://github.com/Ryan53132">Github</a></li>
+                </ul>
+              </li> 
             </ul>
           </div>
         </div>
       </nav>
     </header>
-  <section class="container-fluid">
+  <section class="container-fluid mb-5">
     <div class="row justify-content-center mt-3">
-        <div class="col-md-8 mt-3"><img src="https://fatecsjc-prd.azurewebsites.net/static/media/predio.a3883078.png" alt="" class="img-fluid rounded"></div>
+        <div class="col-md-8 mt-3">
+          <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://fatecsjc-prd.azurewebsites.net/static/media/predio.a3883078.png" class="d-block w-100 imagemrarrocel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2020/10/fatec-sao-jose-dos-campos.jpg" class="d-block w-100 imagemrarrocel" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2021/11/fatec-sao-jose-dos-campos2_divulgacao.jpg" class="d-block w-100 imagemrarrocel" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
     </div>
     <div class="row justify-content-center mt-3">
-        <div class="col-md-9 bg-secondary bg-opacity-25 rounded p-3">
+        <div class="col-md-7 bg-secondary rounded pt-3 text-white">
             <h1>Titulo</h1>
             <p>
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem natus harum nisi ea minus inventore provident aperiam rerum eveniet pariatur eos alias quod modi recusandae, 
                 laborum perspiciatis ipsa assumenda sequi.
             </p>
+        </div>
+        <div class="col-md-2 rounded text-white">
+          <div class="card" style="width: 18rem;">
+            <img src="https://bkpsitecpsnew.blob.core.windows.net/uploadsitecps/sites/1/2021/11/fatec-sao-jose-dos-campos2_divulgacao.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+          </div>
         </div>
     </div>
   </section>

@@ -1,6 +1,11 @@
-body{
-    min-height: 100vh;
-}
 footer p{
     margin: 0;
+}
+body{
+    background-image: url(https://fatecsjc-prd.azurewebsites.net/static/media/predio.a3883078.png);
+    background-size: cover;
+    height: 100vh;
+}
+.imagemrarrocel{
+    max-height: 48vh;
 }
