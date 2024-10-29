@@ -1,11 +1,41 @@
-footer p{
-    margin: 0;
+.logo{
+    height: 30px;
 }
+.img-carrosel{
+    height: 40vh;
+    width: 100%;
+}
+
 body{
-    background-image: url(https://fatecsjc-prd.azurewebsites.net/static/media/predio.a3883078.png);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-size: 1rem;
+}
+@media (max-width: 768px){
+    body{
+        font-size: .75rem;
+    }}
+body{
+    background-image: url(https://sjc.fatec.sp.gov.br/static/media/predio.a3883078.png);
     background-size: cover;
     height: 100vh;
+    backdrop-filter: blur(1.5px);
 }
-.imagemrarrocel{
-    max-height: 48vh;
+
+main{
+    flex: 1;
+}
+
+.textos{
+    border: 1px dashed black;
+}
+.comentario{
+    min-height: 48vh;
+}
+.em-cima-footer{
+    margin: 0 0 2vh 0;
+}
+textarea{
+    resize: none;
 }

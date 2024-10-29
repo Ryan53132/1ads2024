@@ -4,61 +4,74 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Bootstrap demo</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
   </head>
-  <body>
+  <body class="p-0 m-0">
     <header>
-      <nav class="navbar navbar-expand-lg bg-danger">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img src="https://seeklogo.com/images/F/Fatec-logo-9710C99301-seeklogo.com.png" alt="" style="height: 20px;"></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="QSN.html">Quem Somos Nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="Form.html">Form</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-    </header>
-  <section class="container-fluid">
-    <div class="row justify-content-center mt-3 mb-3">
-        <div class="col-md-9 container-fluid bg-secondary rounded p-3">
-            <div class="row">
-                <div class="col-md-8 text-white"><h1>Titulo</h1><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A explicabo voluptatibus adipisci nesciunt ullam quaerat 
-                facilis ex sint atque ipsam doloremque laborum, ad molestiae officia vero? Temporibus distinctio sed impedit.</p></div>
-                <div class="col-md-4 align-middle"><img src="https://fatecsjc-prd.azurewebsites.net/static/media/predio.a3883078.png" height="200" alt="" class="img-fluid rounded"></div>
+        <nav class="navbar navbar-expand-lg bg-danger">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img class="logo" src="https://seeklogo.com/images/F/Fatec-logo-9710C99301-seeklogo.com.png" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Quem Somos Nos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="form.html">Comentarios</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sociais
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="#">Instagram</a></li>
+                      <li><a class="dropdown-item" href="#">Facebook</a></li>
+                      <li><a class="dropdown-item" href="#">Github</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
             </div>
-        </div>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-9 bg-secondary text-white rounded p-3">
-            <h1>Titulo</h1>
-            <p>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Rem natus harum nisi ea minus inventore provident aperiam rerum eveniet pariatur eos alias quod modi recusandae, 
-                laborum perspiciatis ipsa assumenda sequi.
-            </p>
-        </div>
-    </div>
-  </section>
-  <footer class="container-fluid fixed-bottom">
-    <div class="row justify-content-center text-center bg-dark text-white p-2">
-        <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quis voluptas autem. 
-            Explicabo sequi vero nobis cumque excepturi? Placeat quisquam ipsa voluptates repudiandae soluta natus excepturi 
-            illo accusantium doloremque eum.</p>
-    </div>
-  </footer>
+          </nav>
+    </header>
+    <main class="container-fluid pt-4 ">
+        <section class="row justify-content-around">
+            <div class="col-md-5 bg-body rounded p-3 shadow textos">
+                <h1>Como Começou</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse repellendus praesentium quae perferendis sapiente. Reprehenderit fugiat, rem doloribus neque distinctio similique suscipit maiores voluptatem accusantium reiciendis dolorem aspernatur facere at?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis animi quaerat necessitatibus et? Voluptatem, asperiores, labore accusantium dolores veritatis magni iusto quia amet fugiat quibusdam voluptas pariatur ratione sed id.</p>
+            </div>
+            <div class="col-md-5 bg-body rounded p-3 textos">
+                <h1>O que somos</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis assumenda quam officiis nesciunt. Tenetur itaque quidem adipisci error eveniet laudantium doloribus impedit deserunt, nemo ratione, maiores quo sunt earum at!</p>
+            </div>
+        </section>
+        <section class="row justify-content-center mt-3 em-cima-footer">
+            <div class="col-md-11 shadow">
+                <ul class="list-group">
+                    <li class="list-group-item active" aria-current="true">Sedes</li>
+                    <li class="list-group-item">Sao jose dos Campos</li>
+                    <li class="list-group-item">Sao paulo</li>
+                    <li class="list-group-item">Jacarei</li>
+                    <li class="list-group-item">Caçapava</li>
+                  </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="container-fluid bg-dark pb-2 pt-2">
+        <section class="row w-100">
+            <div class="col-md text-center text-white">
+                Todos direitos reservados
+            </div>
+        </section>
+    </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
