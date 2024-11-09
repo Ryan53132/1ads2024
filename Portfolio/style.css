@@ -1,4 +1,5 @@
 body{
+    position: relative;
     min-height: 100vh;
     background-image: linear-gradient(#000000, rgb(0, 0, 82));
     font-size: 1rem;
@@ -20,18 +21,41 @@ main a{
     height: 100vh;
     padding-top: 25vh;
 }
-.QS{
-    height: 100vh;
-    padding-top: 6vh;
+
+.conteudo{
+    justify-content: center;
+    margin-top: 6vh;
 }
-.QS img {
-    height: 200px;
+.conteudo p {
+    margin-left: 10px;
 }
-.foto{
-    height: max-content;
-    width: max-content;
+.accordion{
+    --bs-accordion-btn-bg:rgb(0,0,0,0);
+    --bs-accordion-active-bg:transparent;
+    --bs-accordion-btn-color:white;
+}
+.accordion-button::after{
+    --bs-accordion-btn-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed)::after{
+    --bs-accordion-btn-active-icon:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='none' stroke='rgba%28255,255,255,1%29' stroke-linecap='round' stroke-linejoin='round'%3e%3cpath d='M2 5L8 11L14 5'/%3e%3c/svg%3e");
+}
+.accordion-button:not(.collapsed){
+    --bs-accordion-active-color:white;
+}
+.accordion-item{
+    background-color: transparent;
+}
+.progress{
+    --bs-progress-bg: rgb(0,0,0,0);
+}
+.progress-bar{
+    border-radius: 10px;
 }
 
+footer{
+    background-color: #000000;
+}
 
 @media (max-width:768px) {
     body{
@@ -48,4 +72,41 @@ main a{
     .olamundo{
         font-size: 4rem;
     }
+}
+@keyframes appear{
+    0%{
+        opacity: 0;
+        transform: translate(-100px);
+    }
+    100%{
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+@keyframes appear-glitch {
+    0%{opacity: 1;transform: translate(0);}
+    0.1%{opacity: 0;transform: translate(-100px);}
+    5%{opacity: .3;transform: translate(-70px);}
+    5.1%{opacity: 0;transform: translate(-100);}
+    10%{opacity: .3;transform: translate(-70px);}
+    10.1%{opacity: 0;transform: translate(-100);}
+    50%{opacity: .39;transform: translate(-50px);}
+    50.1%{opacity: 1;transform: translate(-100px,-200px);}
+    70%{opacity: 1;transform: translate(-100px,-200px);}
+    70.0001%{opacity: 1;transform: translate(100px,200px);}
+    80.999%{opacity: 1;transform: translate(100px,200px);}
+    81%{opacity: 1;transform: translate(-30px);}
+    100%{transform: translate(0);opacity: 1;}
+}
+.animacao-intro{
+    animation: appear 1s linear;
+}
+.animacao-intro-ola{
+    animation: appear-glitch 3s linear;
+    animation-delay: 2s;
+}
+.animacao{
+    animation: appear linear;
+    animation-timeline: view();
+    animation-range: entry 0 cover 30%;
 }
