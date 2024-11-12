@@ -21,7 +21,10 @@ main a{
     height: 100vh;
     padding-top: 25vh;
 }
-
+.Pf-FT{
+    border-radius: 12px;
+    width: 200px;
+}
 .conteudo{
     justify-content: center;
     margin-top: 6vh;
